@@ -1,3 +1,4 @@
+class CatsController < ApiController
 module Api
   module V1
     class CatsController < ApplicationController

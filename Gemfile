@@ -51,7 +51,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
-  gem "codeclimate-test-reporter", group: :test, require: nil
+  gem "codeclimate-test-reporter"
 end
 
 gem 'simple_form'
@@ -59,3 +59,4 @@ gem 'byebug'
 gem 'dragonfly'
 gem 'rabl'
 gem 'oj'
+gem 'rmagick', '2.13.2'

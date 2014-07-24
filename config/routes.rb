@@ -2,6 +2,14 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  resources :cats, except: [:new, :edit]
+
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+      resources :cats
+    end
+  end
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
@@ -13,7 +21,6 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :cats, except: [:new, :edit]
 
   # Example resource route with options:
   #   resources :products do
@@ -55,3 +62,4 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+

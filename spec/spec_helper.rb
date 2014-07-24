@@ -1,12 +1,11 @@
 require 'simplecov'
-require "codeclimate-test-reporter"
+require 'codeclimate-test-reporter'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
     SimpleCov::Formatter::HTMLFormatter,
     CodeClimate::TestReporter::Formatter
 ]
 SimpleCov.start 'rails'
-CodeClimate::TestReporter.start
 
 
 # This file was generated
