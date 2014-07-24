@@ -57,3 +57,5 @@ end
 gem 'simple_form'
 gem 'byebug'
 gem 'dragonfly'
+gem 'rabl'
+gem 'oj'
